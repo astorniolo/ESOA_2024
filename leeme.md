@@ -50,9 +50,9 @@ sqlite3
 MySQL
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.smysql',
+            'ENGINE': 'django.db.backends.mysql',
             'NAME': 'nombre_de_tu_database',
-            'USER': 'root' ,l
+            'USER': 'root' ,
             'PASSWORD':'tupasword',
             'HOST':'localhost',
         }
@@ -81,7 +81,8 @@ panel de administracion
         NOMBRE DE CAMPOS por defecto Capitalize y cambia "_" por " "
         verbose_name="aca pongo otro nombre del campo"
         metodo --str--
-        migrar 
+        migrar => python manage.py makemirations
+                  Python managepy migrate 
     CAMPOS PARA VER
         en admin.py 
         crear ueva clase con los campors qque quiero proyectar
